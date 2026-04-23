@@ -248,6 +248,33 @@
                 )
             },
             {
+                id: 'macro4',
+                icon: 'fa-wallet',
+                title: 'Liquidez e Consumo',
+                subtitle: 'O impacto do salário do aprendiz na microeconomia local.',
+                stats: [
+                    { label: 'Custo Médio Mensal por Jovem', value: 'R$ 1.313,55' },
+                    { label: 'Injeção Direta no Varejo', value: 'R$ 10,4 Milhões/mês' }
+                ],
+                source: 'Fontes: MTE (CAGED) e IBGE (Pesquisa de Orçamentos Familiares).',
+                analysis: (
+                    <ul className="space-y-4 list-none text-base md:text-lg">
+                        <li className="flex items-start">
+                            <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
+                            <span><strong className="text-white">Injeção Direta:</strong> <strong>R$ 10,4 milhões</strong> pagos mensalmente vão direto para as mãos dos jovens goianos.</span>
+                        </li>
+                        <li className="flex items-start">
+                            <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
+                            <span><strong className="text-white">Gasto Imediato:</strong> Quase <strong>100% deste salário</strong> é consumido localmente em alimentação, roupas e lazer.</span>
+                        </li>
+                        <li className="flex items-start">
+                            <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
+                            <span><strong className="text-white">Motor do Varejo:</strong> O programa atua como o principal <strong>impulsionador silencioso</strong> do comércio de bairro.</span>
+                        </li>
+                    </ul>
+                )
+            },
+            {
                 id: 'macro2',
                 icon: 'fa-city',
                 title: 'A "Cidade SENAI"',
@@ -300,33 +327,6 @@
                         </li>
                     </ul>
                 )
-            },
-            {
-                id: 'macro4',
-                icon: 'fa-wallet',
-                title: 'Liquidez e Consumo',
-                subtitle: 'O impacto do salário do aprendiz na microeconomia local.',
-                stats: [
-                    { label: 'Custo Médio Mensal por Jovem', value: 'R$ 1.313,55' },
-                    { label: 'Injeção Direta no Varejo', value: 'R$ 10,4 Milhões/mês' }
-                ],
-                source: 'Fontes: MTE (CAGED) e IBGE (Pesquisa de Orçamentos Familiares).',
-                analysis: (
-                    <ul className="space-y-4 list-none text-base md:text-lg">
-                        <li className="flex items-start">
-                            <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
-                            <span><strong className="text-white">Injeção Direta:</strong> <strong>R$ 10,4 milhões</strong> pagos mensalmente vão direto para as mãos dos jovens goianos.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
-                            <span><strong className="text-white">Gasto Imediato:</strong> Quase <strong>100% deste salário</strong> é consumido localmente em alimentação, roupas e lazer.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
-                            <span><strong className="text-white">Motor do Varejo:</strong> O programa atua como o principal <strong>impulsionador silencioso</strong> do comércio de bairro.</span>
-                        </li>
-                    </ul>
-                )
             }
         ];
 
@@ -346,20 +346,20 @@
                 icon: 'fas fa-industry',
                 name: 'Manufatura & Automação',
                 steps: [
-                    { role: 'Aprendiz Industrial', desc: 'Mecânica Básica / Usinagem', salary: 'R$ 850*', tag: 'Partida', trend: 'neutral' },
-                    { role: 'Técnico Especializado', desc: 'Mecatrônica ou Eletrotécnica', salary: 'R$ 3.550', tag: '+317%', trend: 'up' },
-                    { role: 'Operador Especializado', desc: 'Usinagem CNC e Robótica', salary: 'R$ 5.200', tag: '+511%', trend: 'up' },
-                    { role: 'Engenheiro Fabril', desc: 'Gestor de Planta / Lean', salary: 'R$ 12.800', tag: '+1.405%', trend: 'up' }
+                    { role: 'Curso de Aprendizagem', desc: 'Mecânica Industrial / Usinagem', salary: 'R$ 850*', tag: 'Partida', trend: 'neutral' },
+                    { role: 'Curso Técnico', desc: 'Mecatrônica / Eletrotécnica', salary: 'R$ 3.550', tag: '+317%', trend: 'up' },
+                    { role: 'Curso Superior de Tecnologia', desc: 'Automação Industrial', salary: 'R$ 5.200', tag: '+511%', trend: 'up' },
+                    { role: 'Engenharia', desc: 'Mecânica / Automação e Controle / Elétrica', salary: 'R$ 12.800', tag: '+1.405%', trend: 'up' }
                 ]
             },
             tecnologia: {
                 icon: 'fas fa-microchip',
-                name: 'Tecnologia da Informação',
+                name: 'Tecnologia da Informação e Comunicação',
                 steps: [
-                    { role: 'Aprendiz em TI', desc: 'Manutenção e Suporte Básico', salary: 'R$ 850*', tag: 'Partida', trend: 'neutral' },
-                    { role: 'Técnico de Sistemas', desc: 'Desenvolvimento e BD', salary: 'R$ 3.100', tag: '+264%', trend: 'up' },
-                    { role: 'Desenvolvedor Júnior', desc: 'Automação / Software Ind. 4.0', salary: 'R$ 4.850', tag: '+470%', trend: 'up' },
-                    { role: 'Arquiteto de Software', desc: 'Liderança Técnica', salary: 'R$ 14.500', tag: '+1.605%', trend: 'up' }
+                    { role: 'Curso de Aprendizagem', desc: 'Inteligência Artificial', salary: 'R$ 850*', tag: 'Partida', trend: 'neutral' },
+                    { role: 'Curso Técnico', desc: 'Jogos Digitais / Desenvolvimento de Sistemas', salary: 'R$ 3.100', tag: '+264%', trend: 'up' },
+                    { role: 'Curso Superior de Tecnologia', desc: 'Análise e Desenvolvimento de Sistemas', salary: 'R$ 4.850', tag: '+470%', trend: 'up' },
+                    { role: 'Engenharia', desc: 'Engenharia de Software', salary: 'R$ 14.500', tag: '+1.605%', trend: 'up' }
                 ]
             }
         };
