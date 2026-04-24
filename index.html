@@ -154,9 +154,9 @@
                 subtitle: 'O custo da formação profissional versus a arrecadação das prefeituras.',
                 stats: [
                     { label: 'Custo Total do Ecossistema', value: 'R$ 167,2 Milhões' },
-                    { label: 'Supera o Orçamento de', value: '142 Municípios (57%)' }
+                    { label: 'Supera o Orçamento de', value: '8 em cada 10 Cidades' }
                 ],
-                source: 'Fontes: Portal da Transparência (Municípios-GO) e Balanço Orçamentário SENAI-GO.',
+                source: 'Fonte: Receita Bruta Prevista na LOA 2025 (conforme dados do TCM-GO).',
                 analysis: (
                     <div className="space-y-6">
                         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 text-sm">
@@ -193,15 +193,15 @@
                         <ul className="space-y-4 list-none text-base md:text-lg pt-2">
                             <li className="flex items-start">
                                 <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
-                                <span><strong className="text-white">Soma de Esforços:</strong> Movimenta incríveis <strong>R$ 167,2 Milhões/ano</strong> (salários da indústria somados à infraestrutura do SENAI).</span>
+                                <span><strong className="text-white">Impacto Expressivo:</strong> O investimento no ecossistema de aprendizagem do SENAI Goiás (<strong>R$ 167,2 milhões</strong>) é monumental.</span>
                             </li>
                             <li className="flex items-start">
                                 <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
-                                <span><strong className="text-white">Maior que 142 cidades:</strong> O montante financeiro dedicado aos jovens supera o orçamento de <strong>57% das prefeituras</strong> goianas.</span>
+                                <span><strong className="text-white">Maior que 80% do Estado:</strong> Este montante financeiro é tão expressivo que supera o orçamento anual consolidado de cerca de <strong>8 a cada 10 prefeituras goianas</strong>.</span>
                             </li>
                             <li className="flex items-start">
                                 <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
-                                <span><strong className="text-white">Eficiência Privada:</strong> A parceria Indústria-SENAI financia uma base educacional mais robusta que a máquina pública local.</span>
+                                <span><strong className="text-white">Relevância Regional:</strong> A "receita" gerada para a juventude no programa é maior do que a receita total de municípios com enorme importância regional, como <strong>Piracanjuba e Silvânia</strong>.</span>
                             </li>
                         </ul>
 
@@ -211,16 +211,16 @@
                                 <i className="fas fa-map-marked-alt text-indigo-400 mr-2"></i> Comparativo de Arrecadação Municipal
                             </h4>
                             <p className="text-sm text-indigo-100 mb-4 leading-relaxed">
-                                Para efeito de lastro: apenas o investimento isolado da indústria goiana nos aprendizes <strong>(R$ 125,7 Milhões)</strong> já supera o orçamento total de dezenas de cidades amplamente conhecidas no estado, como:
+                                Para efeito de lastro: apenas o investimento direto no ecossistema da aprendizagem <strong>(R$ 167,2 Milhões)</strong> já supera a arrecadação anual de cidades com forte atividade econômica, como:
                             </p>
                             <div className="flex flex-wrap gap-3 mt-2">
                                 {[
+                                    { name: 'Piracanjuba', rank: '89º', budget: 'R$ 152,1 Mi' },
+                                    { name: 'Silvânia', rank: '94º', budget: 'R$ 144,8 Mi' },
                                     { name: 'Cocalzinho de Goiás', rank: '117º', budget: 'R$ 126,4 Mi' },
                                     { name: 'Abadiânia', rank: '125º', budget: 'R$ 98,5 Mi' },
                                     { name: 'Orizona', rank: '131º', budget: 'R$ 89,2 Mi' },
-                                    { name: 'Cachoeira Alta', rank: '145º', budget: 'R$ 68,1 Mi' },
-                                    { name: 'Corumbá de Goiás', rank: '152º', budget: 'R$ 56,8 Mi' },
-                                    { name: 'Sanclerlândia', rank: '168º', budget: 'R$ 42,3 Mi' }
+                                    { name: 'Cachoeira Alta', rank: '145º', budget: 'R$ 68,1 Mi' }
                                 ].map((city, idx) => (
                                     <div key={idx} className="bg-indigo-900/60 border border-indigo-500/40 p-3 rounded-xl flex-1 min-w-[160px] shadow-sm hover:border-indigo-400 transition-colors">
                                         <span className="text-indigo-100 text-xs font-bold block mb-3 truncate">
@@ -239,8 +239,8 @@
                                     </div>
                                 ))}
                                 <div className="bg-slate-800/80 border border-slate-600 p-3 rounded-xl flex-1 min-w-[160px] flex flex-col items-center justify-center shadow-sm">
-                                    <span className="text-slate-300 text-sm font-bold mb-1">+ 110 Cidades</span>
-                                    <span className="text-[10px] text-slate-500 uppercase tracking-widest text-center font-medium">Orçamentos &lt; R$ 40 Mi</span>
+                                    <span className="text-slate-300 text-sm font-bold mb-1">+ 180 Cidades</span>
+                                    <span className="text-[10px] text-slate-500 uppercase tracking-widest text-center font-medium">Orçamentos Inferiores</span>
                                 </div>
                             </div>
                         </div>
@@ -281,22 +281,22 @@
                 subtitle: 'O exército de jovens aprendizes e a escala populacional.',
                 stats: [
                     { label: 'Total de Aprendizes', value: '7.978 jovens' },
-                    { label: 'Cidades Menores que o Programa', value: '72 municípios' }
+                    { label: 'Cidades Menores que o Programa', value: '130 municípios' }
                 ],
-                source: 'Fonte: IBGE - Censo Demográfico e Estimativas Populacionais.',
+                source: 'Fonte: IBGE (Estimativa 2025)',
                 analysis: (
                     <ul className="space-y-4 list-none text-base md:text-lg">
                         <li className="flex items-start">
                             <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
-                            <span><strong className="text-white">Escala Municipal:</strong> Quase <strong>8 mil aprendizes</strong> formam uma "cidade" maior que 72 municípios goianos.</span>
+                            <span><strong className="text-white">Maior que 53% do Estado:</strong> Com 7.978 aprendizes, a "Cidade SENAI" formaria um município mais populoso que <strong>130 das 246</strong> cidades goianas.</span>
                         </li>
                         <li className="flex items-start">
                             <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
-                            <span><strong className="text-white">Pleno Emprego:</strong> Uma população onde <strong>100%</strong> possui carteira assinada, renda garantida e está estudando.</span>
+                            <span><strong className="text-white">Ultrapassando Municípios Reais:</strong> Esse batalhão de jovens supera a população inteira de cidades como <strong>Campo Alegre (7.807)</strong>, <strong>Bom Jardim de Goiás (7.775)</strong>, <strong>Cachoeira Dourada (7.762)</strong> e <strong>Faina (7.167)</strong>.</span>
                         </li>
                         <li className="flex items-start">
                             <i className="fas fa-arrow-right text-indigo-400 mt-1.5 mr-4 flex-shrink-0"></i>
-                            <span><strong className="text-white">Combate ao Êxodo:</strong> A garantia de emprego e carreira retém o jovem no interior, evitando a fuga para outras regiões.</span>
+                            <span><strong className="text-white">Pleno Emprego e Retenção:</strong> Diferente de uma cidade comum, trata-se de uma demografia onde <strong>100%</strong> possui carteira assinada, blindando o jovem contra a evasão escolar e o êxodo rural.</span>
                         </li>
                     </ul>
                 )
@@ -1154,14 +1154,15 @@
             return (
                 <div className="min-h-screen pb-20 bg-slate-50">
                     
-                    {/* CABEÇALHO COM AS DUAS LOGOMARCAS */}
+                    {/* CABEÇALHO COM AS TRÊS LOGOMARCAS */}
                     <header className="bg-white border-b border-slate-200 pt-10 pb-16 px-8 lg:px-16 relative overflow-hidden">
                         <div className="max-w-7xl mx-auto relative z-10">
                             
                             {/* Bloco de Logomarcas */}
                             <div className="flex flex-col md:flex-row justify-between items-center w-full mb-12 z-20 gap-8 md:gap-0">
-                                <img src="https://i.postimg.cc/Xqm6wy5p/marca-aprendizagem-PRO-02.png" alt="Logomarca Aprendizagem PRO" className="h-20 md:h-28 object-contain" />
-                                <img src="https://i.postimg.cc/gkZfCjRv/marca-4º-workshop-01.png" alt="Logomarca 4º Workshop" className="h-20 md:h-28 object-contain" />
+                                <img src="https://i.postimg.cc/Xqm6wy5p/marca-aprendizagem-PRO-02.png" alt="Logomarca Aprendizagem PRO" className="h-16 md:h-24 object-contain" />
+                                <img src="https://i.postimg.cc/CLSyP3cB/marca-SENAI-2024-completa-colorida.png" alt="Logomarca SENAI" className="h-16 md:h-24 object-contain" />
+                                <img src="https://i.postimg.cc/gkZfCjRv/marca-4º-workshop-01.png" alt="Logomarca 4º Workshop" className="h-16 md:h-24 object-contain" />
                             </div>
 
                             <div className="pt-4 text-center md:text-left">
@@ -1252,14 +1253,14 @@
                                     <div 
                                         key={stat.id} 
                                         onClick={() => setActiveImpactModal(stat)}
-                                        className="cursor-pointer rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:-translate-y-2 flex flex-col items-center justify-center border-2 border-slate-700 bg-slate-800 hover:bg-slate-700 hover:border-blue-500 shadow-xl min-h-[280px] group"
+                                        className="cursor-pointer rounded-3xl p-6 lg:p-8 transition-all duration-300 hover:scale-105 hover:-translate-y-2 flex flex-col items-center justify-center border-2 border-slate-700 bg-slate-800 hover:bg-slate-700 hover:border-blue-500 shadow-xl min-h-[220px] group"
                                     >
-                                        <i className={`fas ${stat.icon} text-6xl text-slate-500 mb-6 group-hover:text-blue-400 transition-colors`}></i>
-                                        <h3 className="text-3xl font-bold text-slate-300 mb-6 text-center">{stat.title}</h3>
+                                        <i className={`fas ${stat.icon} text-5xl text-slate-500 mb-4 group-hover:text-blue-400 transition-colors`}></i>
+                                        <h3 className="text-2xl lg:text-3xl font-bold text-slate-300 mb-4 text-center">{stat.title}</h3>
                                         
                                         <div className="mt-auto w-full">
-                                            <div className="bg-blue-600/20 border border-blue-500/30 text-blue-300 rounded-xl px-6 py-4 flex items-center justify-center font-bold uppercase tracking-widest text-xs group-hover:bg-blue-600 group-hover:text-white transition-colors w-full shadow-inner">
-                                                <i className="fas fa-expand-arrows-alt mr-3 text-lg"></i> Tela Inteira
+                                            <div className="bg-blue-600/20 border border-blue-500/30 text-blue-300 rounded-xl px-4 py-3 flex items-center justify-center font-bold uppercase tracking-widest text-xs group-hover:bg-blue-600 group-hover:text-white transition-colors w-full shadow-inner">
+                                                <i className="fas fa-expand-arrows-alt mr-3 text-base"></i> Tela Inteira
                                             </div>
                                         </div>
                                     </div>
@@ -1267,43 +1268,43 @@
                             </div>
 
                             {/* SUBSEÇÃO: O PESO MACROECONÔMICO */}
-                            <div className="mt-24 pt-16 border-t border-slate-700 z-10 relative">
-                                <div className="text-center mb-12">
+                            <div className="mt-16 pt-12 border-t border-slate-700 z-10 relative">
+                                <div className="text-center mb-10">
                                     <div className="inline-flex items-center justify-center bg-blue-900/50 border border-blue-500/30 text-blue-300 px-6 py-2 rounded-full text-sm font-bold mb-6 uppercase tracking-widest">
                                         <i className="fas fa-search-dollar mr-2"></i> O Peso Macroeconômico (2025)
                                     </div>
                                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
                                         A Aprendizagem na Estrutura Econômica Goiana
                                     </h3>
-                                    <p className="text-xl text-slate-400 max-w-4xl mx-auto leading-relaxed">
+                                    <p className="text-lg lg:text-xl text-slate-400 max-w-4xl mx-auto leading-relaxed">
                                         Selecione um cartão para abrir em tela inteira a análise comparativa entre o investimento privado em capital humano e a infraestrutura dos municípios.
                                     </p>
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                                     {macroCards.map((card) => (
                                         <div 
                                             key={card.id}
                                             onClick={() => setActiveMacroModal(card)}
-                                            className="cursor-pointer rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:-translate-y-2 flex flex-col border-2 border-slate-700 bg-slate-800 hover:bg-slate-700 hover:border-indigo-500 shadow-2xl relative overflow-hidden min-h-[320px] group"
+                                            className="cursor-pointer rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:-translate-y-2 flex flex-col border-2 border-slate-700 bg-slate-800 hover:bg-slate-700 hover:border-indigo-500 shadow-2xl relative overflow-hidden min-h-[240px] group"
                                         >
                                             <div className="flex flex-col h-full z-10 relative">
-                                                <div className="flex items-start justify-between mb-6">
-                                                    <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center shadow-inner border border-slate-700 flex-shrink-0 group-hover:border-indigo-500/50 transition-colors">
-                                                        <i className={`fas ${card.icon} text-3xl text-indigo-400`}></i>
+                                                <div className="flex items-start justify-between mb-4">
+                                                    <div className="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center shadow-inner border border-slate-700 flex-shrink-0 group-hover:border-indigo-500/50 transition-colors">
+                                                        <i className={`fas ${card.icon} text-2xl text-indigo-400`}></i>
                                                     </div>
                                                 </div>
-                                                <h3 className="text-2xl font-black text-white mb-3 leading-tight">{card.title}</h3>
-                                                <p className="text-lg text-slate-400 mb-8 flex-grow">{card.subtitle}</p>
+                                                <h3 className="text-xl lg:text-2xl font-black text-white mb-2 leading-tight">{card.title}</h3>
+                                                <p className="text-base text-slate-400 mb-6 flex-grow">{card.subtitle}</p>
                                                 
                                                 <div className="mt-auto">
-                                                    <div className="bg-indigo-600/20 border border-indigo-500/30 text-indigo-300 rounded-xl p-4 flex items-center justify-center font-bold uppercase tracking-widest text-xs group-hover:bg-indigo-600 group-hover:text-white transition-colors shadow-inner">
-                                                        <i className="fas fa-expand-arrows-alt mr-3 text-lg"></i> Expandir Análise
+                                                    <div className="bg-indigo-600/20 border border-indigo-500/30 text-indigo-300 rounded-xl p-3 flex items-center justify-center font-bold uppercase tracking-widest text-xs group-hover:bg-indigo-600 group-hover:text-white transition-colors shadow-inner">
+                                                        <i className="fas fa-expand-arrows-alt mr-3 text-base"></i> Expandir Análise
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* Marca d'água de fundo interagindo com Hover */}
-                                            <i className={`fas ${card.icon} text-[180px] absolute -bottom-10 -right-10 opacity-5 pointer-events-none transform -rotate-12 group-hover:scale-110 transition-transform duration-500`}></i>
+                                            <i className={`fas ${card.icon} text-[140px] absolute -bottom-6 -right-6 opacity-5 pointer-events-none transform -rotate-12 group-hover:scale-110 transition-transform duration-500`}></i>
                                         </div>
                                     ))}
                                 </div>
